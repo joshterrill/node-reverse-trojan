@@ -1,0 +1,32 @@
+{
+  "name": "node-reverse-trojan",
+  "version": "1.0.0",
+  "description": "an example of a reverse RAT (remote administration tool / trojan horse) written in NodeJS",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "request": "^2.61.0",
+    "rethinkdb": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshterrill/node-reverse-trojan.git"
+  },
+  "keywords": [
+    "rat",
+    "trojan",
+    "trojan",
+    "horse"
+  ],
+  "author": "Josh Terrill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshterrill/node-reverse-trojan/issues"
+  },
+  "homepage": "https://github.com/joshterrill/node-reverse-trojan#readme"
+}
